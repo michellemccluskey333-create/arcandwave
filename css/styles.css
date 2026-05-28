@@ -54,7 +54,7 @@ a {
   justify-content: flex-end;
   align-items: center;
   padding: 18px 7vw;
-  background: transparent;
+  background: rgba(251, 248, 241, 0.96);
   border-bottom: none;
   backdrop-filter: none;
 }
