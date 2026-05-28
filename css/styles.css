@@ -118,11 +118,11 @@ body.has-scrolled .floating-brand {
   align-items: center;
   gap: 12px;
   transform: scale(0.82) translateY(-20px);
+  
 }
 
 body.has-scrolled .floating-brand-line {
-   opacity: 1;
-   max-height: 20px;
+  display: block;
 }
 
 body.has-scrolled .floating-brand-mark {
