@@ -68,42 +68,65 @@ a {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  transform: scale(1.85);
+  gap: 10px;
+  text-decoration: none;
+  transform: scale(1.75);
   transform-origin: top left;
   transition: transform 0.45s ease, gap 0.45s ease;
 }
 
-.floating-brand-logo {
+.floating-brand-mark {
   width: 170px;
   height: auto;
   display: block;
   transition: width 0.45s ease;
 }
 
+.floating-brand-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.floating-brand-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  letter-spacing: 0.42em;
+  color: var(--navy);
+}
+
 .floating-brand-line {
-  font-size: 0.56rem;
-  letter-spacing: 0.22em;
+  margin-top: 5px;
+  font-size: 0.5rem;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--navy);
-  white-space: nowrap;
-  transition: font-size 0.45s ease, letter-spacing 0.45s ease;
 }
 
-/* Shrink logo into header on scroll */
+/* scrolled: emblem + text become horizontal */
 body.has-scrolled .floating-brand {
-  flex-direction: column;
-  gap: 3px;
-  transform: scale(0.72) translateY(-8px);
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  transform: scale(0.78) translateY(-9px);
 }
 
-body.has-scrolled .floating-brand-logo {
-  width: 165px;
+body.has-scrolled .floating-brand-mark {
+  width: 78px;
+}
+
+body.has-scrolled .floating-brand-copy {
+  align-items: flex-start;
+}
+
+body.has-scrolled .floating-brand-name {
+  font-size: 1rem;
+  letter-spacing: 0.36em;
 }
 
 body.has-scrolled .floating-brand-line {
-  font-size: 0.55rem;
-  letter-spacing: 0.2em;
+  font-size: 0.5rem;
+  letter-spacing: 0.22em;
 }
 
 /* Nav */
