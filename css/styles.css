@@ -110,7 +110,7 @@ body.has-scrolled .floating-brand {
   flex-direction: row;
   align-items: center;
   gap: 14px;
-  transform: scale(0.78) translateY(-10px);
+  transform: scale(1.05) translateY(-6px);
 }
 
 body.has-scrolled .floating-brand-line {
@@ -118,7 +118,7 @@ body.has-scrolled .floating-brand-line {
 }
 
 body.has-scrolled .floating-brand-mark {
-  width: 72px;
+   width: 120px;
 }
 
 body.has-scrolled .floating-brand-copy {
@@ -147,7 +147,7 @@ body.has-scrolled .floating-brand-copy {
 /* Hero */
 .hero {
   min-height: 100vh;
-  padding: 300px 7vw 120px;
+  padding: 340px 7vw 120px;
   display: flex;
   align-items: center;
   background:
