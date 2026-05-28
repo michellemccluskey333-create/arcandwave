@@ -1,12 +1,6 @@
-const header = document.querySelector(".site-header");
-
-function toggleHeader() {
-  if (window.scrollY > 180) {
-    header.classList.add("is-visible");
-  } else {
-    header.classList.remove("is-visible");
-  }
+function updateScrolledHeader() {
+  document.body.classList.toggle("has-scrolled", window.scrollY > 24);
 }
 
-window.addEventListener("scroll", toggleHeader);
-toggleHeader();
+updateScrolledHeader();
+window.addEventListener("scroll", updateScrolledHeader);
