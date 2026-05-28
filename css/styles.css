@@ -72,13 +72,22 @@ a {
   text-decoration: none;
   transform: scale(1.25);
   transform-origin: top left;
-  transition: transform 0.45s ease, gap 0.45s ease;
+  transition: transform 0.75s ease, gap 0.75s ease;
+}
+
+.floating-brand-mark,
+.floating-brand-copy,
+.floating-brand-name,
+.floating-brand-line {
+  transition: all 0.75s ease;
 }
 
 .floating-brand-mark {
   width: 230px;
   height: auto;
-  display: block;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
 }
 
 .floating-brand-copy {
@@ -109,16 +118,17 @@ a {
 body.has-scrolled .floating-brand {
   flex-direction: row;
   align-items: center;
-  gap: 14px;
-  transform: scale(1.05) translateY(-6px);
+  gap: 12px;
+  transform: scale(0.82) translateY(-20px);
 }
 
 body.has-scrolled .floating-brand-line {
-  display: block;
+   opacity: 1;
+   max-height: 20px;
 }
 
 body.has-scrolled .floating-brand-mark {
-   width: 120px;
+    width: 88px;
 }
 
 body.has-scrolled .floating-brand-copy {
