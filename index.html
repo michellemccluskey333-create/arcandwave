@@ -3,99 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arc & Wave | Websites, Workflows & Customer Experience</title>
-  <meta name="description" content="Arc & Wave helps service-based businesses improve their website, inquiry flow, and online presence." />
-  <link rel="stylesheet" href="css/styles.css" />
+
+  <title>Arc & Wave</title>
+
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <script src="JS/script.js" defer></script>
 </head>
 
 <body>
-  <header class="site-header">
-    <a href="#home" class="header-brand" aria-label="Arc & Wave home">
-      <img src="images/logo-image.PNG" alt="Arc & Wave logo" />
-      <span>Strategy. Systems. Clarity.</span>
-    </a>
+  <a href="#home" class="floating-brand" aria-label="Arc & Wave home">
+    <img src="Images/logo-image.PNG" alt="Arc & Wave logo" class="floating-brand-logo" />
+    <span class="floating-brand-line">Strategy. Systems. Clarity.</span>
+  </a>
 
-    <nav class="nav-links">
+  <header class="site-header">
+    <nav class="site-nav">
       <a href="#services">Services</a>
       <a href="#approach">Approach</a>
       <a href="#about">About</a>
-      <a href="#contact" class="nav-button">Let's Connect</a>
+      <a href="#contact">Consult</a>
     </nav>
   </header>
 
   <main id="home">
     <section class="hero">
-      <div class="hero-logo">
-        <img src="images/logo-image.PNG" alt="Arc & Wave logo" />
-        <p>Strategy. Systems. Clarity.</p>
-      </div>
-
-      <div class="hero-content">
+      <div class="text-wrapper">
         <p class="eyebrow">Websites • Workflows • Customer Experience</p>
+
         <h1>A clearer website.<br>A smoother client experience.</h1>
+
         <p class="hero-text">
           I help service-based businesses improve their website, inquiry flow, and online presence
           so customers know what you offer, how to contact you, and why to trust you.
         </p>
-        <a href="#contact" class="primary-button">Request a Consult</a>
+
+        <a href="#contact" class="button">Request a Consult</a>
       </div>
     </section>
 
-    <section id="services" class="section services-section">
+    <section id="services" class="section">
       <p class="eyebrow">What I Help With</p>
       <h2>Simple digital support for real business needs.</h2>
 
-      <div class="service-grid">
-        <article class="service-card">
+      <div class="card-grid">
+        <article>
           <h3>Website Design</h3>
           <p>Clean, mobile-friendly websites that make your business easy to understand.</p>
         </article>
 
-        <article class="service-card">
+        <article>
           <h3>Inquiry & Booking Flow</h3>
           <p>Forms, contact paths, and follow-up structure so leads do not get lost.</p>
         </article>
 
-        <article class="service-card">
+        <article>
           <h3>Digital Organization</h3>
           <p>Simple tools and workflows to help you manage client information, requests, and next steps.</p>
         </article>
       </div>
     </section>
 
-    <section id="approach" class="section split-section">
-      <div>
-        <p class="eyebrow">Approach</p>
-        <h2>Clarity first. Then design.</h2>
-      </div>
-      <div>
-        <p>
-          Before building anything, I look at how people find you, what they need to understand,
-          where they may get confused, and how inquiries should move from interest to next step.
-        </p>
-      </div>
-    </section>
-
-    <section id="about" class="section about-section">
-      <p class="eyebrow">About Arc & Wave</p>
-      <h2>Built for small businesses that need things to feel clearer, easier, and more professional.</h2>
+    <section id="approach" class="section soft-section">
+      <p class="eyebrow">Approach</p>
+      <h2>Clarity first. Then design.</h2>
       <p>
-        Arc & Wave brings together website design, operational thinking, and customer experience
-        to help service-based businesses create a stronger digital foundation.
+        Before building, I look at how people find you, what they need to understand,
+        where they may get confused, and how inquiries should move from interest to next step.
       </p>
     </section>
 
+    <section id="about" class="section">
+      <p class="eyebrow">About Arc & Wave</p>
+      <h2>Built for service businesses that need things clearer, easier, and more professional.</h2>
+    </section>
+
     <section id="contact" class="section contact-section">
-      <p class="eyebrow">Let's Connect</p>
       <h2>Ready to make your online presence easier to understand?</h2>
-      <a href="mailto:hello@arcandwave.co" class="primary-button">Request a Consult</a>
+      <a href="mailto:hello@arcandwave.co" class="button">Request a Consult</a>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <p>© 2026 Arc & Wave. Strategy. Systems. Clarity.</p>
-  </footer>
-
-  <script src="js/script.js"></script>
 </body>
 </html>
