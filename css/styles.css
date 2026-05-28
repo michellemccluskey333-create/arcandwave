@@ -286,9 +286,9 @@ h2::after {
     transform: scale(0.72) translateY(-6px);
   }
 
-  .floating-brand-logo {
-    width: 150px;
-  }
+.floating-brand-mark {
+  width: 150px;
+}
 
   .hero {
     padding-top: 180px;
