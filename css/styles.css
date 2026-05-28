@@ -62,24 +62,23 @@ a {
 /* Floating logo stack */
 .floating-brand {
   position: fixed;
-  top: 24px;
+  top: 28px;
   left: 7vw;
   z-index: 10000;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   text-decoration: none;
-  transform: scale(1.75);
+  transform: scale(1.55);
   transform-origin: top left;
   transition: transform 0.45s ease, gap 0.45s ease;
 }
 
 .floating-brand-mark {
-  width: 170px;
+  width: 180px;
   height: auto;
   display: block;
-  transition: width 0.45s ease;
 }
 
 .floating-brand-copy {
@@ -93,6 +92,7 @@ a {
   font-size: 1rem;
   letter-spacing: 0.42em;
   color: var(--navy);
+  white-space: nowrap;
 }
 
 .floating-brand-line {
@@ -101,32 +101,23 @@ a {
   letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--navy);
+  white-space: nowrap;
 }
 
-/* scrolled: emblem + text become horizontal */
+/* On scroll: emblem left, words right */
 body.has-scrolled .floating-brand {
   flex-direction: row;
   align-items: center;
   gap: 14px;
-  transform: scale(0.78) translateY(-9px);
+  transform: scale(0.78) translateY(-10px);
 }
 
 body.has-scrolled .floating-brand-mark {
-  width: 78px;
+  width: 72px;
 }
 
 body.has-scrolled .floating-brand-copy {
   align-items: flex-start;
-}
-
-body.has-scrolled .floating-brand-name {
-  font-size: 1rem;
-  letter-spacing: 0.36em;
-}
-
-body.has-scrolled .floating-brand-line {
-  font-size: 0.5rem;
-  letter-spacing: 0.22em;
 }
 
 /* Nav */
