@@ -62,7 +62,7 @@ a {
 /* Floating logo stack */
 .floating-brand {
   position: fixed;
-  top: 46px;
+  top: 34px;
   left: 7vw;
   z-index: 10000;
   display: inline-flex;
@@ -70,14 +70,13 @@ a {
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  transform: scale(1.25);
+  transform: scale(1.05);
   transform-origin: top left;
   transition: transform 0.45s ease, gap 0.45s ease;
-}sition: transform 0.45s ease, gap 0.45s ease;
 }
 
 .floating-brand-mark {
-  width: 180px;
+  width: 150px;
   height: auto;
   display: block;
 }
@@ -148,7 +147,7 @@ body.has-scrolled .floating-brand-copy {
 /* Hero */
 .hero {
   min-height: 100vh;
-  padding: 360px 7vw 120px;
+  padding: 300px 7vw 120px;
   display: flex;
   align-items: center;
   background:
