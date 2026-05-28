@@ -1,5 +1,5 @@
 function updateScrolledHeader() {
-  document.body.classList.toggle("has-scrolled", window.scrollY > 24);
+  document.body.classList.toggle("has-scrolled", window.scrollY > 80);
 }
 
 updateScrolledHeader();
