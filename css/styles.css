@@ -70,13 +70,13 @@ a {
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  transform: scale(1.05);
+  transform: scale(1.25);
   transform-origin: top left;
   transition: transform 0.45s ease, gap 0.45s ease;
 }
 
 .floating-brand-mark {
-  width: 180px;
+  width: 230px;
   height: auto;
   display: block;
 }
