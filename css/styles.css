@@ -78,7 +78,7 @@ body.has-scrolled .site-header {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   text-decoration: none;
   transform: scale(1.25);
   transform-origin: top left;
