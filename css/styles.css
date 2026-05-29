@@ -68,7 +68,7 @@ a {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 2px;
   text-decoration: none;
   transform: scale(1.25);
   transform-origin: top left;
@@ -107,9 +107,9 @@ a {
   font-size: 0.5rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: var(--navy);
+  color: var(--gold);
   white-space: nowrap;
-  display: none;
+  display: block;
 }
 
 /* On scroll: emblem left, words right */
@@ -119,10 +119,6 @@ body.has-scrolled .floating-brand {
   gap: 12px;
   transform: scale(0.82) translateY(-20px);
   
-}
-
-body.has-scrolled .floating-brand-line {
-  display: block;
 }
 
 body.has-scrolled .floating-brand-mark {
