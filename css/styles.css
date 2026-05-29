@@ -128,7 +128,7 @@ body.has-scrolled .floating-brand {
   flex-direction: row;
   align-items: center;
   gap: 12px;
-  transform: scale(0.95) translateY(-24px);
+  transform: scale(1) translateY(-32px);
   
 }
 
