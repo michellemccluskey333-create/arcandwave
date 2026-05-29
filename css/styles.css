@@ -5,6 +5,11 @@
   --navy: #082848;
   --blue: #2f7fc4;
   --gold: #b98a2f;
+  --deep-ocean: #243b53;
+  --slate-blue: #5d7285;
+  --river-rock: #8a8477;
+  --soft-sand: #eae3d7;
+  --mist: #f7f5f2;
   --text: #1c2733;
   --muted: #637083;
   --line: rgba(8, 40, 72, 0.14);
@@ -285,7 +290,7 @@ h2::after {
 }
 
 .contact-section {
-  background: var(--navy);
+  background: var(--deep-ocean);
   color: var(--white);
   text-align: center;
 }
@@ -301,8 +306,14 @@ h2::after {
 }
 
 .contact-section .button {
-  background: var(--white);
-  color: var(--navy);
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--gold);
+}
+
+.contact-section .button:hover {
+  background: var(--gold);
+  color: var(--deep-ocean);
 }
 
 /* Mobile */
