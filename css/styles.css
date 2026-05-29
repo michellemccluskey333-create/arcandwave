@@ -54,9 +54,15 @@ a {
   justify-content: flex-end;
   align-items: center;
   padding: 18px 7vw;
-  background: rgba(231, 236, 239, 0.88);
+  background: transparent;
   border-bottom: none;
   backdrop-filter: none;
+  transition: background 0.45s ease, box-shadow 0.45s ease;
+}
+
+body.has-scrolled .site-header {
+  background: #e7ecef;
+  box-shadow: 0 1px 18px rgba(8, 40, 72, 0.08);
 }
 
 /* Floating logo stack */
@@ -122,7 +128,7 @@ body.has-scrolled .floating-brand {
 }
 
 body.has-scrolled .floating-brand-mark {
-    width: 100px;
+    width: 112px;
 }
 
 body.has-scrolled .floating-brand-copy {
