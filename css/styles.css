@@ -103,6 +103,7 @@ body.has-scrolled .site-header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: -28px;
 }
 
 .floating-brand-name {
