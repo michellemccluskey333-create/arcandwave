@@ -69,7 +69,7 @@ body.has-scrolled .site-header {
 .floating-brand {
   position: fixed;
   top: 46px;
-  left: 7vw;
+  left: 4vw;
   z-index: 10000;
   width: 230px;
   height: auto;
