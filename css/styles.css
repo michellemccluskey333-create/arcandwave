@@ -159,7 +159,8 @@ body.has-scrolled .floating-brand-copy {
 }
 
 .site-nav a:hover {
-  color: var(--deep-ocean);
+  color: var(--gold);
+  text-shadow: 0 0 12px rgba(185, 138, 47, 0.55);
 }
 
 .nav-cta {
@@ -264,6 +265,7 @@ h2::after {
 .nav-cta {
   padding: 12px 28px;
   margin-left: 8px;
+  color: var(--white);
 }
 
 .footer-button {
@@ -388,7 +390,7 @@ h2::after {
 }
 
 .footer-brand img {
-  width: 90px;
+  width: 135px;
   display: block;
 }
 
