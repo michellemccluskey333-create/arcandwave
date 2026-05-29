@@ -162,6 +162,12 @@ body.has-scrolled .floating-brand-copy {
   color: var(--blue);
 }
 
+.nav-cta {
+  color: var(--navy);
+  padding: 12px 28px;
+  margin-left: 8px;
+}
+
 /* Hero */
 .hero {
   min-height: 100vh;
