@@ -9,6 +9,7 @@
   --slate-blue: #5d7285;
   --river-rock: #8a8477;
   --soft-sand: #eae3d7;
+  --sea-glass: #7fa7a0;
   --mist: #f7f5f2;
   --text: #1c2733;
   --muted: #637083;
@@ -76,10 +77,6 @@ body.has-scrolled .site-header {
   top: 46px;
   left: 4vw;
   z-index: 10000;
-  width: 230px;
-  height: auto;
-  display: block;
-  margin-bottom: -18px;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
@@ -251,75 +248,135 @@ h2::after {
 }
 
 /* Sections */
-.section {
-  padding: 96px 7vw;
-  background: var(--white);
-}
-
-.section h2 {
-  font-size: clamp(2.2rem, 4vw, 4rem);
-  max-width: 860px;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  margin-top: 52px;
-  border: 1px solid var(--line);
-  background: var(--line);
-}
-
-.card-grid article {
-  background: var(--white);
-  padding: 42px 34px;
-}
-
-.card-grid h3 {
-  font-size: 1.6rem;
-  margin-bottom: 14px;
-}
-
-.card-grid p,
-.soft-section p {
-  color: var(--muted);
-}
-
-.soft-section {
-  background: linear-gradient(135deg, var(--cream), var(--soft-blue));
-}
-
-.contact-section {
-  background: var(--deep-ocean);
-  color: var(--white);
+.process-section {
+  background: var(--mist);
   text-align: center;
 }
 
-.contact-section h2 {
-  color: var(--white);
+.process-section h2 {
   margin: 0 auto;
 }
 
-.contact-section h2::after {
+.process-section h2::after {
   margin-left: auto;
   margin-right: auto;
 }
 
-.contact-section .button {
-  background: transparent;
-  color: var(--white);
-  border: 1px solid var(--gold);
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  margin-top: 54px;
+  background: rgba(36, 59, 83, 0.14);
 }
 
-.contact-section .button:hover {
-  background: var(--gold);
+.process-grid article {
+  background: var(--mist);
+  padding: 36px 28px;
+}
+
+.process-grid h3 {
+  font-family: Arial, sans-serif;
+  color: var(--deep-ocean);
+  font-size: 1rem;
+}
+
+.process-grid p {
+  color: var(--muted);
+}
+
+.services-section {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 7vw;
+  background: var(--soft-sand);
+}
+
+.services-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+}
+
+.services-list li {
+  margin-bottom: 14px;
   color: var(--deep-ocean);
 }
 
-/* Mobile */
+.services-list li::before {
+  content: "✓";
+  color: var(--sea-glass);
+  margin-right: 10px;
+}
+
+.services-feature h2 {
+  font-size: clamp(2rem, 4vw, 3.8rem);
+}
+
+.contact-section {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 36px;
+  background: var(--deep-ocean);
+  color: var(--white);
+  padding: 44px 7vw;
+  text-align: left;
+}
+
+.footer-brand img {
+  width: 92px;
+  display: block;
+}
+
+.footer-message h2 {
+  color: var(--white);
+  font-family: Arial, sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  line-height: 1.35;
+}
+
+.footer-message h2::after {
+  display: none;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 28px;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.18);
+}
+
+.footer-nav a {
+  color: rgba(255,255,255,0.82);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.footer-button {
+  padding: 14px 34px;
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.footer-button:hover {
+  background: var(--sea-glass);
+  border-color: var(--sea-glass);
+}
+
 @media (max-width: 850px) {
-  .site-header {
-    min-height: 76px;
+  .process-grid,
+  .services-section,
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
   }
 
   .site-nav {
