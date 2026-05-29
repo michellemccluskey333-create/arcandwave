@@ -239,14 +239,15 @@ h2::after {
 }
 
 /* Buttons */
+/* Buttons */
 .button,
 .nav-cta,
 .footer-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--deep-ocean);
-  color: var(--white);
+  background: transparent;
+  color: var(--deep-ocean);
   border: 2px solid #d6a642;
   border-radius: 8px;
   box-shadow: none;
@@ -258,29 +259,30 @@ h2::after {
 }
 
 .button {
-  background: var(--deep-ocean);
-  color: var(--white);
-  border: 2px solid #d6a642;
+  margin-top: 24px;
+  padding: 15px 24px;
 }
 
-.nav-cta,
-.footer-button {
-  background: transparent;
-  color: var(--white);
-  border: 2px solid #d6a642;
+.nav-cta {
+  padding: 12px 28px;
+  margin-left: 8px;
 }
 
 .footer-button {
   padding: 14px 34px;
+  color: var(--white);
   white-space: nowrap;
+}
+
+.site-nav a.nav-cta {
+  color: var(--deep-ocean);
 }
 
 .button:hover,
 .nav-cta:hover,
 .footer-button:hover {
-  background: var(--deep-ocean);
-  color: var(--white);
-  border-color: var(--gold);
+  background: transparent;
+  border-color: #d6a642;
   box-shadow: 0 0 22px rgba(214, 166, 66, 0.65);
   transform: translateY(-2px);
 }
