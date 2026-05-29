@@ -164,7 +164,7 @@ body.has-scrolled .floating-brand-copy {
 }
 
 .nav-cta {
-  color: var(--navy);
+  color: var(--white);
   padding: 12px 28px;
   margin-left: 8px;
 }
@@ -247,7 +247,7 @@ h2::after {
   justify-content: center;
   background: var(--deep-ocean);
   color: var(--white);
-  border: 1.25px solid var(--gold);
+  border: 2px solid #d6a642;
   border-radius: 8px;
   box-shadow: none;
   font-size: 0.75rem;
@@ -279,7 +279,7 @@ h2::after {
   background: var(--deep-ocean);
   color: var(--white);
   border-color: var(--gold);
-  box-shadow: 0 0 18px rgba(185, 138, 47, 0.55);
+ box-shadow: 0 0 22px rgba(214, 166, 66, 0.65);
   transform: translateY(-2px);
 }
 
