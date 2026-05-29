@@ -251,10 +251,12 @@ h2::after {
 .process-section {
   background: var(--mist);
   text-align: center;
+  padding: 80px 7vw 70px;
 }
 
 .process-section h2 {
   margin: 0 auto;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
 }
 
 .process-section h2::after {
@@ -265,31 +267,37 @@ h2::after {
 .process-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  margin-top: 54px;
-  background: rgba(36, 59, 83, 0.14);
+  gap: 0;
+  margin-top: 52px;
 }
 
 .process-grid article {
-  background: var(--mist);
-  padding: 36px 28px;
+  padding: 28px 36px;
+  border-right: 1px solid rgba(36, 59, 83, 0.14);
+}
+
+.process-grid article:last-child {
+  border-right: none;
 }
 
 .process-grid h3 {
-  font-family: Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", serif;
   color: var(--deep-ocean);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .process-grid p {
   color: var(--muted);
+  font-size: 0.95rem;
 }
-
+/* What I Help With section */
 .services-section {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 7vw;
-  background: var(--soft-sand);
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 6vw;
+  align-items: center;
+  background: var(--mist);
+  padding: 80px 7vw 90px;
 }
 
 .services-list ul {
@@ -301,18 +309,39 @@ h2::after {
 .services-list li {
   margin-bottom: 14px;
   color: var(--deep-ocean);
+  font-size: 1rem;
 }
 
 .services-list li::before {
   content: "✓";
-  color: var(--sea-glass);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
   margin-right: 10px;
+  border: 1px solid var(--sea-glass);
+  border-radius: 50%;
+  color: var(--sea-glass);
+  font-size: 0.7rem;
+}
+
+.services-feature {
+  background: rgba(234, 227, 215, 0.5);
+  padding: 54px;
+  border-radius: 12px;
 }
 
 .services-feature h2 {
   font-size: clamp(2rem, 4vw, 3.8rem);
 }
 
+.services-feature p {
+  color: var(--muted);
+  max-width: 680px;
+}
+
+/* Footer */
 .contact-section {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -320,20 +349,21 @@ h2::after {
   gap: 36px;
   background: var(--deep-ocean);
   color: var(--white);
-  padding: 44px 7vw;
+  padding: 38px 7vw;
   text-align: left;
 }
 
 .footer-brand img {
-  width: 92px;
+  width: 90px;
   display: block;
 }
 
 .footer-message h2 {
   color: var(--white);
   font-family: Arial, sans-serif;
-  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-size: clamp(1.15rem, 2vw, 1.65rem);
   line-height: 1.35;
+  font-weight: 700;
 }
 
 .footer-message h2::after {
@@ -343,13 +373,13 @@ h2::after {
 .footer-nav {
   display: flex;
   gap: 28px;
-  margin-top: 24px;
+  margin-top: 20px;
   padding-top: 18px;
-  border-top: 1px solid rgba(255,255,255,0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .footer-nav a {
-  color: rgba(255,255,255,0.82);
+  color: rgba(255, 255, 255, 0.82);
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
