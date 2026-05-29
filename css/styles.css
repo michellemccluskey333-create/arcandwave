@@ -231,20 +231,35 @@ h2::after {
   line-height: 1.55;
 }
 
+/* Buttons */
 .button {
   display: inline-flex;
   margin-top: 24px;
   padding: 15px 24px;
-  background: var(--navy);
-  color: var(--white);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
-.button:hover {
-  background: var(--blue);
+.button,
+.nav-button,
+.footer-button {
+  background: transparent;
+  color: var(--navy);
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  box-shadow: none;
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover,
+.nav-button:hover,
+.footer-button:hover {
+  background: transparent;
+  border-color: var(--gold);
+  box-shadow: 0 0 18px rgba(185, 138, 47, 0.55);
+  transform: translateY(-2px);
 }
 
 /* Sections */
@@ -388,14 +403,17 @@ h2::after {
 .footer-button {
   padding: 14px 34px;
   border: 1px solid var(--gold);
-  border-radius: 6px;
+  border-radius: 8px;
   color: var(--white);
+  background: transparent;
   white-space: nowrap;
 }
 
 .footer-button:hover {
-  background: var(--sea-glass);
-  border-color: var(--sea-glass);
+  background: transparent;
+  border-color: var(--gold);
+  box-shadow: 0 0 18px rgba(185, 138, 47, 0.55);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 850px) {
