@@ -247,7 +247,7 @@ h2::after {
   justify-content: center;
   background: var(--deep-ocean);
   color: var(--white);
-  border: 1px solid var(--deep-ocean);
+  border: 1.25px solid var(--gold);
   border-radius: 8px;
   box-shadow: none;
   font-size: 0.75rem;
