@@ -244,8 +244,8 @@ h2::after {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
-  color: var(--deep-ocean);
+  background: var(--deep-ocean);
+  color: var(--white);
   border: 1px solid var(--deep-ocean);
   border-radius: 8px;
   box-shadow: none;
@@ -253,7 +253,7 @@ h2::after {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
 .button {
@@ -268,15 +268,14 @@ h2::after {
 
 .footer-button {
   padding: 14px 34px;
-  color: var(--white);
-  border-color: var(--gold);
   white-space: nowrap;
 }
 
 .button:hover,
 .nav-cta:hover,
 .footer-button:hover {
-  background: transparent;
+  background: var(--deep-ocean);
+  color: var(--white);
   border-color: var(--gold);
   box-shadow: 0 0 18px rgba(185, 138, 47, 0.55);
   transform: translateY(-2px);
