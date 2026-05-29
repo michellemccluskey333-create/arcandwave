@@ -287,10 +287,6 @@ h2::after {
   transform: translateY(-2px);
 }
 
-.site-nav a.nav-cta:hover {
-  color: var(--white);
-  text-shadow: none;
-}
 /* Sections */
 .process-section {
   background: var(--mist);
