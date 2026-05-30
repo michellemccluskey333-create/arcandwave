@@ -3,13 +3,13 @@
   --soft-blue: #e7ecef;
   --white: #ffffff;
   --navy: #082848;
-  --blue: #2f7fc4;
-  --gold: #b98a2f;
+  --gold: #c98f2e;
+  --warm-stone: #a8a79f;
+  --accent-gold: #d7b36a;
   --deep-ocean: #243b53;
   --slate-blue: #5d7285;
   --river-rock: #8a8477;
   --soft-sand: #eae3d7;
-  --sea-glass: #7fa7a0;
   --mist: #f7f5f2;
   --text: #1c2733;
   --muted: #637083;
@@ -263,7 +263,7 @@ h2::after {
   justify-content: center;
   background: transparent;
   color: var(--deep-ocean);
-  border: 2px solid #d6a642;
+  border: 2px solid var(--gold);
   border-radius: 8px;
   box-shadow: none;
   font-size: 0.75rem;
@@ -298,7 +298,7 @@ h2::after {
 .footer-button:hover {
   background: transparent;
   border-color: #d6a642;
-  box-shadow: 0 0 22px rgba(214, 166, 66, 0.65);
+  box-shadow: 0 0 22px rgba(201, 143, 46, 0.58);
   transform: translateY(-2px);
 }
 
@@ -363,9 +363,9 @@ h2::after {
   width: 19px;
   height: 19px;
   margin-right: 12px;
-  border: 1px solid var(--sea-glass);
+  border: 1px solid var(--warm-stone);
+  color: var(--warm-stone);
   border-radius: 50%;
-  color: var(--sea-glass);
   font-size: 0.72rem;
 }
 
