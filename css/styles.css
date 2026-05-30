@@ -421,6 +421,16 @@ h2::after {
   color: var(--muted);
   font-size: 0.95rem;
 }
+
+.services-section,
+.process-section {
+  background: linear-gradient(
+    180deg,
+    #f7f5f2 0%,
+    #eef0ef 55%,
+    #e7ecef 100%
+  );
+}
 /* Footer */
 .contact-section {
   display: grid;
