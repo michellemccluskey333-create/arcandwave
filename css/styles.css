@@ -71,8 +71,8 @@ a {
 }
 
 body.has-scrolled .site-header {
-  background: #e7ecef;
-  box-shadow: 0 1px 18px rgba(8, 40, 72, 0.08);
+  background: #d8e2e8;
+  box-shadow: 0 1px 18px rgba(8, 40, 72, 0.12);
 }
 
 /* Floating logo stack */
