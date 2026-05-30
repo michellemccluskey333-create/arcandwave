@@ -313,7 +313,7 @@ h2::after {
   grid-template-columns: 1.1fr 0.9fr;
   gap: 6vw;
   align-items: center;
-  background: linear-gradient(180deg, var(--mist), var(--soft-sand));
+   background: var(--mist);
 }
 
 .section-intro {
