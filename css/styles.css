@@ -81,6 +81,7 @@ body.has-scrolled .site-header {
   flex-direction: row;
   align-items: center;
   gap: 6px;
+  filter: drop-shadow(0 8px 22px rgba(36, 59, 83, 0.14));
   text-decoration: none;
   transform: scale(1.25);
   transform-origin: top left;
