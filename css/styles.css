@@ -127,6 +127,16 @@ body.has-scrolled .site-header {
   display: block;
 }
 
+.floating-brand::before {
+  content: "";
+  position: absolute;
+  inset: -24px -34px;
+  z-index: -1;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.38);
+  filter: blur(18px);
+}
+
 /* On scroll: emblem left, words right */
 body.has-scrolled .floating-brand {
   flex-direction: row;
