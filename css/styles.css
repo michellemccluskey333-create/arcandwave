@@ -39,7 +39,11 @@ h3 {
   line-height: 1.05;
   margin: 0;
 }
-
+.section h2 {
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
 p {
   line-height: 1.7;
 }
@@ -407,6 +411,8 @@ h2::after {
 
 .process-grid h3 {
   color: var(--deep-ocean);
+  font-weight: 400;
+  letter-spacing: -0.02em;
   font-size: 1.35rem;
   margin-bottom: 14px;
 }
