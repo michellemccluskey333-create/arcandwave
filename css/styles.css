@@ -476,6 +476,10 @@ h2::after {
   text-transform: uppercase;
   letter-spacing: 0.12em;
 }
+  .footer-nav a:hover {
+    color: var(--gold);
+    text-shadow: 0 0 12px rgba(201, 143, 46, 0.55);
+  }
 
 @media (max-width: 850px) {
    .services-section,
@@ -491,10 +495,6 @@ h2::after {
     display: none;
   }
   
-  .footer-nav a:hover {
-    color: var(--gold);
-    text-shadow: 0 0 12px rgba(201, 143, 46, 0.55);
-  }
   
   .floating-brand {
     transform: scale(0.9);
