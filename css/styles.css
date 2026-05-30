@@ -324,7 +324,7 @@ h2::after {
   font-size: clamp(2rem, 3.8vw, 3.8rem);
 }
 
-.section-intro p {
+.section-intro p:not(.eyebrow) {
   max-width: 620px;
   color: var(--muted);
   font-size: 1.08rem;
