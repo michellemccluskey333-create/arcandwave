@@ -360,13 +360,15 @@ h2::after {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 19px;
-  height: 19px;
-  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+  background: var(--warm-stone);
   border: 1px solid var(--warm-stone);
-  color: var(--warm-stone);
   border-radius: 50%;
-  font-size: 0.72rem;
+  color: var(--white);
+  font-size: 0.82rem;
+  font-weight: 700;
 }
 
 .process-section {
