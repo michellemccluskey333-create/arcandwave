@@ -260,7 +260,6 @@ h2::after {
 }
 
 /* Buttons */
-/* Buttons */
 .button,
 .nav-cta,
 .footer-button {
@@ -468,6 +467,7 @@ h2::after {
 }
 
 .services-section,
+.industries-section,
 .process-section {
   background: linear-gradient(
     180deg,
