@@ -388,13 +388,13 @@ h2::after {
 
 .industry-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
-  margin-top: 54px;
+  margin-top: 42px;
 }
 
 .industry-card {
-  min-height: 220px;
+  min-height: 160px;
   display: flex;
   align-items: flex-end;
   padding: 28px;
