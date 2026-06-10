@@ -395,7 +395,7 @@ h2::after {
 
 .industry-card {
   position: relative;
-  height: 180px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
@@ -409,8 +409,6 @@ h2::after {
 }
 .industry-card {
   position: relative;
-  height: 180px;
-  min-height: 0;
   overflow: hidden;
 }
 
