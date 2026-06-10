@@ -377,7 +377,12 @@ h2::after {
 }
 
 .industries-section {
-  background: var(--mist);
+  background: linear-gradient(
+    180deg,
+    #f7f5f2 0%,
+    #eef0ef 55%,
+    #e7ecef 100%
+  );
   text-align: center;
 }
 
@@ -386,66 +391,15 @@ h2::after {
   margin: 0 auto;
 }
 
-.industry-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+.industries-section p:not(.eyebrow) {
+  max-width: 680px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.industries-section .button {
   margin-top: 42px;
-}
-
-.industry-card {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  height: 320px;
-  aspect-ratio: 4 / 3;
-  align-items: flex-end;
-  padding: 28px;
-  border-radius: 18px;
-  border: 1px solid rgba(36, 59, 83, 0.1);
-  color: var(--white);
-  background: rgba(255, 255, 255, 0.62);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.45rem;
-  box-shadow: 0 18px 42px rgba(36, 59, 83, 0.06);
-  transition:
-  transform 0.3s ease,
-  box-shadow 0.3s ease,
-  border-color 0.3s ease;
-}
-
-.industry-card img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
- 
-}
-
-.industry-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(8, 40, 72, 0.65) 0%,
-    rgba(8, 40, 72, 0.2) 40%,
-    rgba(8, 40, 72, 0.05) 100%
-  );
-}
-.industry-card span {
-  position: relative;
-  z-index: 2;
-  font-size: 1.5rem;
-}
-
-.industry-card:hover {
-  border-color: var(--gold);
-  box-shadow: 0 0 22px rgba(201, 143, 46, 0.28);
-  transform: translateY(-2px);
 }
 
 .process-section {
